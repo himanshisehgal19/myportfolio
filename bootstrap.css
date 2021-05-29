@@ -1,0 +1,124 @@
+#title{
+    background-color:crimson;
+    color: azure;
+}
+.container-fluid{
+    padding: 3% 15%;
+}
+.navbar{
+    padding: 0 0 4rem;
+}
+.buton{
+    margin: 5% 3% 5% 0%;
+}
+.imgsize{
+    
+    width: 25rem;
+    
+}
+#features{
+    padding: 4% 10%;
+}
+.feat{
+    text-align: center;
+    padding: 5%;
+}
+p{
+    color:dodgerblue;
+}
+.icon{
+    color: crimson;
+    margin-bottom: 1rem;
+}
+.icon:hover{
+    color: rgba(13, 13, 112, 0.932);
+}
+#testimonial
+{
+    padding-left: 30%;
+    padding-top: 7%;
+    padding-right: 15%;
+    padding-bottom: 7%;
+    background-color: crimson;
+    color: white;
+}
+#testimnial
+{
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    background-color: crimson;
+    color: white;
+}
+h2{
+    font-size: 3rem;
+}
+.testimonialimg{
+    width: 50%;
+    border-radius: 100%;
+    padding-left: 4rem;
+    margin: 10%;
+}
+#clr{
+    color: thistle;
+}
+#pd{
+    margin-top: 3rem;
+   font-family: Alata;
+    padding-left: 1rem;
+}
+#pde{
+    margin-top: 3rem;
+   font-family: Alata;
+    padding: 4rem;
+    color: white;
+}
+#pdex{
+    margin-top: 0.5rem;
+   font-family: Alata;
+   margin-left: 3rem;
+    color: white;
+}
+#pdexx{
+    margin-top: 0.5rem;
+   font-family: Alata;
+   margin-left: 5rem;
+    color: white;
+    font-size: 2rem;
+}
+.cardtitle{
+    text-align: center;
+    font-family: Alata;
+    color: crimson;
+}
+#card{
+    padding-top: 4rem;
+    
+}
+#login{
+    background-color: crimson;
+}
+td{
+	width: 15rem;
+    height: 10rem;
+}
+pre{
+
+    font-family: 'Montserrat-Black', sans-serif;
+    font-size: 2rem;
+    line-height: 1.5;
+    }
+    #pdx{
+        margin-top: 1rem;
+       font-family: Alata;
+        padding-left: 1rem;
+        font-family: 'Montserrat-Black', sans-serif;
+    font-size: 3rem;
+
+    }
+    .img-fluid{
+height: 12rem;
+
+width: 20rem;
+    }

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--fontsgoogle.com-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel ="stylesheet" type="text/css" href="aboutdia.css"> 
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!--font awesome ka cdn-->
+    <script src="https://kit.fontawesome.com/de5c14ee89.js" crossorigin="anonymous"></script>
+    <title>About physician dataminig</title>
+<style>
+
+#main-footer
+    {
+      color: #FFFFFF;
+      font-family: "Segoe UI";
+      background: #2B2B2B;
+      text-align: center;
+      margin-top: 75px;
+      padding: 16px;
+      bottom: 8px;
+    }
+</style>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href=""><h2 id="clr"></h2></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav ml-auto" >
+               
+                <li class="nav-item"><a class="nav-link" href="about physician.html" style="color: red;">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://github.com/himanshisehgal19/Project-of-dataMining" style="color: red;">Physician Datamining Project</a></li>
+               
+              </ul>
+      
+            </div>
+          </nav>
+
+<center><h1 style="color: tomato;background-color: honeydew;font-size: 3rem;padding: 3rem;">  Physician Dataminig Web Research </h1></center>
+
+<br>
+<br>
+<h1  style="font-size: 1.7rem;"><center>Overview of project</center></h1>
+<br>
+<center><img src="https://qph.fs.quoracdn.net/main-qimg-24fcc3059bb5a6addc29be9e1a458893" height="400" width="700"></center>
+
+<p style="background-color: white;padding: 3rem; font-size: 1.5rem;">In this project the dataset is of various doctors of USA and the details of doctors includes of their First name , Middle name , Last name, Credential ,
+     Address, State, Zip code and Phone Number. <br>
+     The goal is to check from the web that whether the phone number of a particular doctor given in the dataset is correct or not if the phone number given is correct than the model will provide the link of the website (url) from where this phone number was verified by using python library named as googlesearch but if the number is not matched then it will extract the expected phone numbers of that particular doctor from the web and along with that it will provide the headings from which that number is extracted.
+  
+    </p>
+    <br></h1>
+    
+    <center><img src="phy1.png" height="500" width="1100"></center>
+    <br>
+    <h3 style="margin-left: 3rem;">Steps Performed: </h3>
+    <p style="background-color: white;padding: 3rem; font-size: 1.5rem;"></p>
+    <ul style="background-color: white;padding: 1rem;margin-left: 10rem; font-size: 1.5rem;"><li><b>Import Necessary Libraries</b></li>
+      <li><b>Data Cleaning</b></li>
+      <p style="background-color: white;padding: 3rem; font-size: 1.5rem;">Data cleaning is the first step in data mining. It holds importance as dirty data if used directly in mining can cause confusion in procedures and produce inaccurate results. Basically, this step involves the removal of noisy or incomplete data from the collection. Many methods that generally clean data by itself are available but they are not robust.
+        Pandas Library is mainly used for the process of Data Cleaning.
+        </p>
+      <li><b>Data Integration</b></li>
+      <p style="background-color: white;padding: 3rem; font-size: 1.5rem;">Integrate the data of different columns to some other new columns as because these new columns contains the data that needs to be searced on the web for the phone number verification and extraction.Integrate the data of different columns to a single column 
+        </p>
+      <li><b>URL Collection</b></li>
+      <p style="background-color: white;padding: 3rem; font-size: 1.5rem;">Collect URLs of the pages where you want to extract data from. These URLs are collected by iterating to each and every entry of the new named column as in the image above and taking the data of each and every row and concatenating it with the common URL i.e. 'https://google.com/search?q='  and then make a request to these URLs to get the HTML of the page.
+    </p>
+      <li><b>Extract Text From HTML </b></li>
+      <p style="background-color: white;padding: 3rem; font-size: 1.5rem;">
+        Now in the next step the text is extracted from the HTML page as the page contains of many things but we need is the snippets of that page and the urls above those snippets.
+        This program does three things:
+        1.	Opens the URL request for the text from the urllib.request module
+        2.	Reads the HTML from the page as a string and assigns it to the html variable
+        3.	Creates a BeautifulSoup object and assigns it to the soup variable
+        The BeautifulSoup object assigned to soup is created with two arguments. The first argument is the HTML to be parsed, and the second argument, the string "html.parser", tells the object which parser to use behind the scenes. "html.parser" represents Python’s built-in HTML parser.
+        
+      </p>
+      <li><b>Data Reduction</b></li>
+      <p >
+        Remove all the data that is not required means that remove all the alphabets symbols etc and at last the page is left with the text of only numbers. The data is reduced from the page will lots of different kind of text to only numerical values between 0-9.
+        Concatenate all the numbers as because these numbers are in the form of string use the function .replace(" ","") to remove all the spaces between them.
+       
+      </p>
+      <li><b>Save the data in a JSON or CSV file or some other structured format</b></li>
+    </ul>
+    
+
+
+    <footer id="main-footer">
+        Copyright &copy; Himanshi sehgal 2021
+      </footer>
+  
+  
+    </div>
+
+
+<br> 
+</body>

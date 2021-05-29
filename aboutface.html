@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--fontsgoogle.com-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel ="stylesheet" type="text/css" href="aboutdia.css"> 
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!--font awesome ka cdn-->
+    <script src="https://kit.fontawesome.com/de5c14ee89.js" crossorigin="anonymous"></script>
+    <title>About Face Recognition</title>
+<style>
+
+#main-footer
+    {
+      color: #FFFFFF;
+      font-family: "Segoe UI";
+      background: #2B2B2B;
+      text-align: center;
+      margin-top: 75px;
+      padding: 16px;
+      bottom: 8px;
+    }
+
+</style>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href=""><h2 id="clr"></h2></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav ml-auto" >
+               
+                <li class="nav-item"><a class="nav-link" href="aboutface.html" style="color: red;">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://github.com/himanshisehgal19/Face-Detection-OpenCV-" style="color: red;">Face Recognition</a></li>
+               
+              </ul>
+      
+            </div>
+          </nav>
+
+<center><h1 style="color: tomato;background-color: honeydew;font-size: 3rem;padding: 3rem;">Face Recognition</h1></center>
+<br>
+<center>
+<img src="https://i.pinimg.com/originals/05/ec/48/05ec4876e7d36fe31716557ddc2bd7ee.gif" height="400" width="400"></center>
+<p style="background-color: white;padding: 3rem; font-size: 1.5rem;">A facial recognition system is a technology capable of matching a human face from a digital 
+    image or a video frame against a database of faces, typically employed to authenticate users through 
+    ID verification services, works by pinpointing and measuring facial features from a given image.</p>
+    <br></h1>
+    
+    
+         
+     
+     <center><img src="https://i.pinimg.com/originals/1c/e6/5b/1ce65b7e107dd768c306134afe35f03e.jpg" height="400" width="400"></center>
+     <br>
+     <br>
+     <h3  style="font-size: 1.7rem;"><center>Overview of project</center></h3>
+     <p style="background-color: white;padding: 3rem; font-size: 1.5rem;">
+        A facial recognition system uses biometrics to map facial features from a photograph or video. 
+        It compares the information with a database of known faces to find a match. <br>
+        That's because facial recognition has all kinds of commercial applications. It can be used for everything from surveillance to marketing.<br>
+        Facial recognition is the process of identifying or verifying the identity of a person using their face. It captures, analyzes and compares patterns.<br>
+        </p>
+
+         
+     <br>
+
+     <h3 style="margin-left: 3rem;">Steps Performed: </h3>
+     <p style="background-color: white;padding: 3rem; font-size: 1.5rem;"></p>
+     <ul style="background-color: white;padding: 1rem;margin-left: 10rem; font-size: 1.5rem;"><li><b>Import Necessary Libraries</b></li>
+       
+       <li><b>Detect Face</b></li>
+       <p>Now, you must configure your camera and connect it to your system. The camera should work properly to avoid any issues in face detection.<br>
+
+        Before our camera recognizes us, it first has to detect faces. I  have used the Haar Cascade classifier for face detection.<br>
+         It is primarily an object detection method where you train a cascade function through negative and positive images, after which it
+          becomes able to detect objects in other photos. <br>
+        
+        In our case, model = detect faces, OpenCV comes with a trainer and a detector, so using the Haar Cascade classifier is relatively more comfortable with this library.
+         You can create your classifier to detect other images as well. </p>
+       <li><b>Gather Data</b></li>
+       <p>
+        Now that the model can identify faces, you can train it so it would start recognizing whose face is in the picture. 
+        To do that, you must provide it with multiple photos of the faces you want it to remember. <br>
+
+        That’s why we’ll start with creating our dataset by gathering photos. After collecting the necessary images, 
+        add IDs for every person, so the model knows what face to associate with what ID. 
+        <br>
+        Start with the images of one person and add at least 10-20. 
+        Use different expressions to get the most effective results. 
+        <br>
+        Create a script for adding user IDs to images, so you don’t have to do it manually every time.
+         The script is vital in case you want to use your model for multiple faces. 
+       </p>
+       <li><b>Train</b></li><p>
+        After creating the dataset of the person’s images, you’d have to train the model. You’d feed the pictures to your OpenCV recognizer, and it will create a file <br>
+        In this stage, you only have to provide the model with images and their IDs so the model can get familiar with the ID of every image. After we finish training the model, we can test it. 
+       </p>
+       <li><b>Start Recognition</b></li>
+       <p>Now that you have trained the model, we can start testing the model. In this section, we have added names to the IDs so the model can display the names of the respective users it recognizes. <br>
+        The model doesn’t recognize a person. It predicts whether the face it detects matches to the face present in its database. 
+        Our model displays a percentage of how much the face matches the face present in its database. <br>
+        Its accuracy will depend heavily on the image you’re testing and the pictures you’ve added to your database (the images you trained the model with). 
+    </p>
+      
+     </ul>
+
+
+
+
+
+
+<br> 
+<footer id="main-footer">
+  Copyright &copy; Himanshi sehgal 2021
+</footer>
+</body>
+</html>
